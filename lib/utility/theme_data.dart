@@ -14,16 +14,39 @@ ThemeData _baseBuilderTheme() {
       accentColor: secondaryColour,
       scaffoldBackgroundColor: backgroundColor,
       appBarTheme: base.appBarTheme.copyWith(
-          elevation: 1,
-          color: primaryColour,
+          elevation: 0,
+          color: secondaryColourDark,
           iconTheme: base.iconTheme.copyWith(
-            color: secondaryColour,
+            color: white,
             size: 20,
           ),
           textTheme: base.textTheme.copyWith(
-              headline6: TextStyle(
-            color: white,
-          ))),
+            headline6: TextStyle(
+              color: white,
+            ),
+            headline5: TextStyle(
+              color: white,
+            ),
+            headline4: TextStyle(
+              color: white,
+            ),
+            headline3: TextStyle(
+              color: white,
+            ),
+            headline2: TextStyle(
+              color: white,
+            ),
+            headline1: TextStyle(
+              color: white,
+            ),
+
+            bodyText2: TextStyle(
+              color: white,
+            ),
+            caption: TextStyle(
+              color: white,
+            ),
+          )),
       bottomAppBarTheme:
           base.bottomAppBarTheme.copyWith(color: black54, elevation: 2),
       iconTheme: base.iconTheme.copyWith(color: primaryColour, size: 20),

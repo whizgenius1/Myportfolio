@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 
 class PortfolioAppBar extends StatefulWidget implements PreferredSizeWidget {
+
+  final Widget title;
+  PortfolioAppBar({
+    this.title
+});
+
   @override
   _PortfolioAppBarState createState() => _PortfolioAppBarState();
 
@@ -12,6 +18,11 @@ class PortfolioAppBar extends StatefulWidget implements PreferredSizeWidget {
 class _PortfolioAppBarState extends State<PortfolioAppBar> {
   @override
   Widget build(BuildContext context) {
-    return AppBar();
+    return AppBar(
+   
+      leading: Center(),
+      centerTitle: false,
+      title: widget.title,
+    );
   }
 }

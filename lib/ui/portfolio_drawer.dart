@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/ui/portfolio_flatButton.dart';
 import 'package:portfolio/utility/slide_route.dart';
+import 'package:portfolio/view/about/about_small_screen.dart';
 import 'package:portfolio/view/front_page.dart';
 
 import '../utility/colour.dart';
@@ -32,6 +33,9 @@ class _PortfolioDrawerState extends State<PortfolioDrawer> {
       widget.className.runtimeType == HomeSmallScreen().runtimeType
           ? _home = true
           : _home = false;
+      widget.className.runtimeType == AboutSmallScreen().runtimeType
+          ? _about = true
+          : _about = false;
     });
   }
 
@@ -62,6 +66,7 @@ class _PortfolioDrawerState extends State<PortfolioDrawer> {
                   Navigator.push(
                       context, SlideRightRoute(page: FrontPage(page: About())));
                 },
+                textColor: _about ? primaryColourLight : white,
                 child: Text("About"),
               ),
               SizedBox(height: 10),
