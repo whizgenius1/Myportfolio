@@ -13,9 +13,6 @@ ThemeData _baseBuilderTheme() {
       primaryColor: primaryColour,
       accentColor: secondaryColour,
       scaffoldBackgroundColor: backgroundColor,
-
-
-
       appBarTheme: base.appBarTheme.copyWith(
           elevation: 1,
           color: primaryColour,

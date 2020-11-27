@@ -13,7 +13,7 @@ class HomeSmallScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      endDrawer: PortfolioDrawer(),
+      endDrawer: PortfolioDrawer(HomeSmallScreen()),
       backgroundColor: secondaryColourLight,
       body: Stack(
         children: [

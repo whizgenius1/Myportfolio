@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/utility/theme_data.dart';
+import 'package:portfolio/view/front_page.dart';
 import 'package:portfolio/view/home/home.dart';
 
 void main() {
@@ -47,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      body: Home(),
+      body: FrontPage(page: Home()),
     );
   }
 }

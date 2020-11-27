@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/view/home/large_screen.dart';
-import 'package:portfolio/view/home/small_screen.dart';
+import 'package:portfolio/view/home/home_large_screen.dart';
+import 'package:portfolio/view/home/home_small_screen.dart';
 
 class Home extends StatelessWidget {
   @override
